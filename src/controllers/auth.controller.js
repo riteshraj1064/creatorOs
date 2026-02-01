@@ -45,8 +45,8 @@ export const googleCallback = async (req, res) => {
     );
 
     console.log('➡️ Redirecting to Expo');
-    console.log(`creatoros://auth?token=${jwtToken}`);
-    res.redirect(`creatoros://auth?token=${jwtToken}`);
+    console.log(`creatoros:///auth?token=${jwtToken}`);
+    res.redirect(`creatoros:///auth?token=${jwtToken}`);
   } catch (err) {
     console.error('❌ OAuth Error:', err);
     res.status(500).send('OAuth failed');
